@@ -7,6 +7,10 @@ Infrastructure is deployed in kubbernetes consist from  3 server
 
 * kubernetes
 
-![k8s](https://github.com/sherifkhedr/I-pharmacy/blob/master/infrak8s.drawio.png)
+![k8s](https://github.com/sherifkhedr/I-pharmacy/blob/master/infrak8s.drawio.png)   
 
+| vm name | private ip  | public ip |  
+|--------|--------|---------------------|
+| master |        |        |
+| worker |        |         |            |
  

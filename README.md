@@ -14,3 +14,4 @@ Infrastructure is deployed in kubbernetes consist from  3 server
 | master |  10.114.0.3  | 207.154.226.237 |
 | worker |       10.114.0.4 |  207.154.238.25 |
 | reverse proxy + nfs |  10.114.0.5    |      138.68.74.211      | 
+| pod network cidr| 10.244.0.0/16 |

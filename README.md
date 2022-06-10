@@ -12,5 +12,7 @@ Infrastructure is deployed in kubbernetes consist from  3 server
 | vm name | private ip  | public ip |  
 |--------|--------|---------------------|
 | master |        |        |
+|--------|--------|--------|------------|
+|--------|--------|----------------------|
 | worker |        |         |            |
- 
+| reverse proxy + nfs |      |           | 

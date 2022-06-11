@@ -50,5 +50,12 @@ you can display exposed folder by running command :
         ``` kubectl get ingress ```
 
 ### How to deploy application in k8s
-the applications are deployed by Helm Charts so you can edit values.yaml to change the tag of the image to new one and run this command:
+the applications are deployed by Helm Charts so you can edit values.yaml to change the tag of the image to new one 
+* to install application in k8s
+and run this command:
+``` helm install (Release name) -n (name space) ```
+* to upgrade application by helm
 ```helm upgrade (Release name) -n (name space) ```
+* to remove application by helm
+``` helm uninstall (Release name) -n (name space) ```
+

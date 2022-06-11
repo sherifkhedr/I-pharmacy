@@ -19,7 +19,7 @@ Infrastructure is deployed in kubbernetes consist from  3 server
 | vm name | private ip  | public ip |  
 |--------|--------|---------------------|
 | master |  10.114.0.3  | 207.154.226.237 |
-| worker |       10.114.0.4 |  207.154.238.25 |
+| worker01 |       10.114.0.4 |  207.154.238.25 |
 | reverse proxy + nfs |  10.114.0.5    |      138.68.74.211      | 
 | pod network cidr| 10.244.0.0/16 |
 
@@ -33,6 +33,12 @@ Infrastructure is deployed in kubbernetes consist from  3 server
       portal      : contain portal appplication
 
 ### nodes:
-* master : manage kuberneets cluster and contain system component
-* worker01 : for deploying applications (pod) on it 
-* reverse proxy + nfs : contain haproyx as reverse also has Nfs server storage
+* Master : manage kuberneets cluster and contain system component
+* Worker01 : for deploying applications (pod) on it 
+* Reverse proxy + nfs : contain haproyx as reverse proxy to forward traffic from outside into k8s cluster
+it's configuration resides in /etc/haproxy/haproxy.cfg
+if you wat to add mode nodes you can do it through backend sections
+
+* Nfs Storage : on the same reverse proxy server the data located in /srv/kubernetes/
+you can display exposed folder by running command
+``` exportfs -v or showmount -e ```

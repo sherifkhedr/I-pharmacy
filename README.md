@@ -44,7 +44,7 @@ you can display exposed folder by running command :
 ``` exportfs -v or showmount -e ```
 
 ### ingress:
-    traefik : to redirect traffic from reverse cluster to the application in a pod 
+   * traefik : to redirect traffic from reverse cluster to the application in a pod 
     each application deployed in k8s cluster have ingress rule and also (admin + portal + api ) have ingress rule
     ingress rule is namespaced for example if you want to get ingress rule for admin by running this command :
     

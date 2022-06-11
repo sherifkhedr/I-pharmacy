@@ -36,7 +36,7 @@ Infrastructure is deployed in kubbernetes consist from  3 server
 * Master : manage kuberneets cluster and contain system component
 * Worker01 : for deploying applications (pod) on it 
 * Reverse proxy + nfs : contain haproyx as reverse proxy to forward traffic from outside into k8s cluster
-it's configuration resides in /etc/haproxy/haproxy.cfg
+it's configuration resides in ```/etc/haproxy/haproxy.cfg```
 if you wat to add mode nodes you can do it through backend sections
 
 * Nfs Storage : on the same reverse proxy server the data located in /srv/kubernetes/
@@ -48,3 +48,7 @@ you can display exposed folder by running command :
     each application deployed in k8s cluster have ingress rule and also (admin + portal + api ) have ingress rule
     ingress rule is namespaced for example if you want to get ingress rule for admin by running this command :
         ``` kubectl get ingress ```
+
+### How to deploy application in k8s
+the applications are deployed by Helm Charts so you can edit values.yaml to change the tag of the image to new one and run this command:
+```helm upgrade ```<Release name >``` -n (name space) ```

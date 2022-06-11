@@ -51,4 +51,4 @@ you can display exposed folder by running command :
 
 ### How to deploy application in k8s
 the applications are deployed by Helm Charts so you can edit values.yaml to change the tag of the image to new one and run this command:
-```helm upgrade ```<Release name >``` -n (name space) ```
+```helm upgrade (Release name) -n (name space) ```

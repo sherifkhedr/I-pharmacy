@@ -23,7 +23,7 @@ Infrastructure is deployed in kubbernetes consist from  3 server
 | reverse proxy + nfs |  10.114.0.5    |      138.68.74.211      | 
 | pod network cidr| 10.244.0.0/16 |
 
-### namespaces :  
+### name spaces :  
       admin-app   : containin admin application (pod) 
       backend-api : contain backend api application (pod)  
       database    : contain sql server database version 17
@@ -31,3 +31,8 @@ Infrastructure is deployed in kubbernetes consist from  3 server
       nfs-storage : for nfs provision storage
       traefik     : for ingress controller
       portal      : contain portal appplication
+
+### nodes:
+* master : manage kuberneets cluster and contain system component
+* worker01 : for deploying applications (pod) on it 
+* reverse proxy + nfs : contain haproyx as reverse also has Nfs server storage
